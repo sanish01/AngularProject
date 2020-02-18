@@ -1,0 +1,58 @@
+.container1{
+    padding: .5em;
+    height: 45px;
+    background-color: white;
+    width: auto;
+    margin: auto;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    
+}
+
+#cross{
+    text-align: right;
+    cursor: pointer;
+}
+
+#profile-container {
+    width: 30px;
+    height: 30px;
+    overflow:hidden;
+    border-radius: 50%;
+    border: 1.1px solid #015B70;
+    margin-top: 17px;
+     
+}
+
+hr{
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    border: .5px solid #015B70;
+    background-color: #015B70;
+
+}
+i{
+    color:#015B70;
+    font-size: 16px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+#notification{
+    margin-top: 15px;
+    cursor: pointer;
+}
+#connect{
+    float: right;
+    cursor: pointer;
+} 
+#connect #tick{
+    margin-right: 1em;
+}
+#profile{
+    text-decoration: underline;
+    cursor: pointer;
+}

@@ -1,0 +1,140 @@
+*{
+    overflow: hidden;
+}
+.container{
+    padding-bottom: 1em;
+    margin-top: 15px;
+}
+
+.container input{
+    background-color: #E5E5E5;
+    width: 228px;
+    height: 32px;
+    border: 1.1px solid #015B70;
+    box-sizing: border-box;
+    margin-left:51%;
+    transform: translate(-50%);
+}
+.body{
+ padding: 1em;
+ margin-left: 10px;
+}
+.body #post{
+    background-color:white;
+    width: 290px;
+    height: 50px;
+    margin-left:49%;
+    transform: translate(-50%);
+    border: 1.1px solid #015B70;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: underline;
+}
+#post :hover{
+    cursor: pointer;
+}
+.box{
+    border: 1.1px solid #015B70;
+    width: 310px;
+    margin-left:50%;
+    transform: translate(-50%);
+    margin-top: .5em;
+    padding:.5em;
+}
+.box1{
+    border: 1.1px solid #015B70;
+    width: 310px;
+    margin-left:50%;
+    transform: translate(-50%);
+    margin-top: 1em;
+    padding: .5em;
+}
+.box p{
+    color: #015B70;
+    text-align: justify;
+}
+.close{
+    color:#015B70;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.modal-container input{
+        width: 100%;
+        height: 46px;
+        border: 1.1px solid #015B70;
+        box-sizing: border-box;
+        margin-top: 5px;
+}
+button[class=button]{
+    background-color: #015B70;
+    border: none;
+    border-radius: 5px;
+    width: 115px;
+    height: 26px;
+    color: #FFFFFF;
+    margin-left: 45%;
+    transform: translate(-50%);
+    margin-top: 1em;
+    cursor: pointer;
+}
+/*#feed{
+    color: #015B70;
+    font-weight: normal;
+    position: fixed;
+    font-size: 20px;
+    top: 50%;
+    height: 0px;
+    text-align: center;
+    display: flex;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    left: 92%;
+    text-decoration: none;
+    
+}*/
+#read{
+    color:#4F361B;
+    cursor: pointer;
+}
+#profile{
+    cursor: pointer; 
+}
+.box1 p{
+    color: #015B70;
+    text-align: justify;
+}
+
+/*.body a{
+    border: 1.1px solid #015B70; 
+}*/
+/*@media screen and (min-width:1260px){
+ #feed{
+    left:94%;
+}
+}
+@media screen and (max-width:375px){
+    #feed{
+        left:71%;
+    }
+}*/
+@media screen and (min-width:376px){
+    .box,.box1{
+        margin-top: 2em;
+        padding-left: 15px;
+        width: 90%;
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+    .body #post{
+        font-size: 22px;
+        font-weight: normal;
+        width: 50%;
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+    button[class=button]{
+        display: block;
+        margin-left: 50%;
+    }
+}

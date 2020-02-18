@@ -1,0 +1,32 @@
+<div class="box-container">
+    <p class="col1" routerLink='/wizardmainpage'>x</p>
+    <img class="colr" src="assets/Images/feedback.svg" alt="svg not found">
+    <p id="like">I like Something</p>
+    <p id="dislike">I don't Like</p>
+</div>
+<div class="container2">
+    <p id="par1">WHAT KIND OF FEEDBACK DO YOU HAVE?</p>
+    <img id="happy" [src]="happy">
+    <p id="par2"><a (click)="openModal('like')">I like Something</a></p>
+    <img id="sad" [src]="sad">
+    <p id="par3"> <a (click)="openModal('dislike')"> I don't like Something</a></p>
+</div>
+
+<ss-modal id="like">
+    <div>
+        <label for="like">WHAT DID YOU LIKE?</label>
+        <textarea id="like"  [(ngModel)]="text" cols="20" rows="2"></textarea>
+        <button type="button" class="button" (click)="closeModal('like')">Cancel</button>
+        <button type="submit" class="button" (click)="msg()" (click)="closeModal('like')">Send</button>
+    </div>
+
+</ss-modal>
+
+<ss-modal id="dislike">
+    <div>
+        <label for="dislike">WHAT DID YOU NOT LIKE?</label>
+        <textarea id="dislike" [(ngModel)]='text' cols="20" rows="2"></textarea>
+        <button type="button" class="button"  (click)="closeModal('dislike')">Cancel</button>
+        <button type="submit" class="button"  (click)="msg()"  (click)="closeModal('dislike')">Send</button>
+    </div>
+</ss-modal>

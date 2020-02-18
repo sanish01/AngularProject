@@ -1,0 +1,51 @@
+<app-header></app-header>
+<div class="container1">
+    <div>
+        <p>Protegee SignUp</p>
+        <form [formGroup]="register" (ngSubmit)="onsubmit()" class="frm">
+            <div><label for="name">FullName*</label>
+                <input formControlName="name" type="text" name="name">
+                <div *ngIf="submitted && f.name.errors" class="validators">
+                    <div *ngIf="f.name.errors.required">Name is required</div>
+                </div>
+            </div>
+            <br>
+            <label for="email">Email*</label>
+            <input formControlName="email" type="text" name="email">
+            <div *ngIf="submitted && f.email.errors" class="validators">
+                <div *ngIf="f.email.errors.required"> This field is required</div>
+                <div *ngIf=" f.email.errors.email">Invalid email format</div>
+            </div>
+            <br>
+            <label for="gender">Gender*</label>
+            <select formControlName="gender" class="selector">
+                <option>Male</option>
+                <option>Female</option>
+                <option>Others</option>
+            </select>
+            <div *ngIf="submitted && f.gender.errors" class="validators">
+                <div *ngIf="f.name.errors.required">Required</div>
+            </div>
+
+            <br>
+            <div><label for="password">Password*</label>
+                <input formControlName="password" type="password" name="password">
+                <div *ngIf=" submitted && f.password.errors" class="validators">
+                    <div *ngIf="f.password.errors.required">Required</div>
+                </div>
+            </div>
+            <br>
+            <div><label for="confrim-password">Confirm-Password*</label>
+                <input formControlName="cnfpassword" type="password" name="conform-password">
+                <div *ngIf="submitted && f.cnfpassword.errors" class="validators">
+                    <div *ngIf=" f.cnfpassword.errors.required">Required</div>
+                    <div *ngIf="f.cnfpassword.errors.mustMatch">Password doesnot match</div>
+                </div>
+            </div>
+            <br>
+            <button type="submit" class="button"> Register</button>
+
+        </form>
+    </div>
+
+</div>

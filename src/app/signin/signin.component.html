@@ -1,0 +1,23 @@
+<app-header></app-header>
+<div class="formcntl">
+    <form [formGroup]='signinForm' (ngSubmit)='onclick()' class="frm">
+        <label for="email">Email</label>
+        <br>
+        <input formControlName="email" type="text" name="Email" id="email" />
+        <div *ngIf=" submitted && signinForm.controls.email.errors" class="validators">
+            <div *ngIf="signinForm.controls.email.errors.required">Email required</div>
+            <div *ngIf="signinForm.controls.email.errors.email">Invalid email</div>
+        </div>
+        <br><br>
+        <label for="password">Password</label><br>
+        <input formControlName="password" type="password" name="password" id="password" />
+        <div *ngIf=" submitted && signinForm.controls.password.errors" class="validators">
+            <div *ngIf="signinForm.controls.password.errors.required">Enter your password</div>
+        </div>
+        <br><br><br>
+        <a href="#">Lost Password?</a>
+        <button type="submit" class="button1">Login</button>
+        <label for="register" class="reg">New User?</label>
+        <input type="button" class="button2" value="Register" (click)='open()'>
+    </form>
+</div>

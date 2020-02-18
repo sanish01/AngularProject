@@ -1,0 +1,78 @@
+*{
+    overflow: hidden;
+}
+.container{
+    padding-bottom: 1em;
+    margin-top: 15px;
+}
+
+.container input{
+    background-color: #E5E5E5;
+    width: 228px;
+    height: 32px;
+    border: 1.1px solid #015B70;
+    box-sizing: border-box;
+    margin-left:51%;
+    transform: translate(-50%);
+}
+h3{
+    text-align: center;
+    color: #015B70;
+    font-size: 20px;
+}
+span{
+    color: #015B70;
+}
+i{
+    display: block;
+    margin-left: 40%;
+    transform: translate(-50%);
+}
+.btn{
+    float: right;
+    margin-right: 10px;
+}
+button{
+    background-color: #015B70;
+   border: none;
+   border-radius: 15px;
+   width: 115px;
+   height: 26px;
+   color: #FFFFFF;
+   margin-top: .1em;
+   margin-right: 15px;
+}
+.p1{
+    border: 1.1px solid#015B70;
+    margin-top: 20px;
+    margin-bottom:35px;
+    margin-left: 5px;
+    width: 340px;
+    padding-top: .3em;
+    padding-bottom:.5em;
+}
+
+button[class=button]{
+background-color: #015B70;
+border: none;
+border-radius: 5px;
+width: 115px;
+height: 26px;
+color: #FFFFFF;
+margin-left: 45%;
+transform: translate(-50%);
+margin-top: 1em;
+cursor: pointer;
+}
+@media screen and (min-width:376px){
+    .p1{
+        margin-left: 50%;
+        transform: translate(-50%);
+    }
+    button[class=button]{
+        margin-left: 30%;
+        transform: translate(-50%);
+    }
+
+    
+}

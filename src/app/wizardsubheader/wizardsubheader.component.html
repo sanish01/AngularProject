@@ -1,0 +1,27 @@
+
+<div class="container1">
+    <div class="nav">
+        <img [src]="logourl" alt="logo" [routerLink]="['/wizardmainpage']" routerLinkActive="wizardmainpage" >
+        <div id="profile-container">
+            <img id="profileImage" src={{profileurl}} />
+        </div> 
+        <img id="notification" src="assets/Images/n1.svg" alt="notification" (click)="openModal('notificationModal')">  
+        <i class="fa fa-bars" routerLink='/wizardham'></i>
+    </div>
+</div>
+<hr>
+
+<ss-modal id="notificationModal">
+    <div class="modalContainer">
+        <p id="cross" (click)="closeModal('notificationModal')">X</p>
+        <hr>
+        <table>
+            <tr>
+                <td><span  id="profile" [routerLink]="['/wpd']">Songoku</span> <span> posted a question which you can help to solve.</span></td>
+            </tr>
+            <tr><td id="connect"><span id="tick" routerLink='/notification'>&#10003;</span><span id="cross1"  on-click="closeModal('notificationModal')">X</span></td> </tr>
+        </table>
+    </div>
+
+</ss-modal>
+

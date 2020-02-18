@@ -1,0 +1,94 @@
+.container1{
+    overflow: hidden;
+    margin-top: 1rem;
+    padding: .5em;
+    border: none;
+}
+
+p{
+    display: block;
+    text-align: center;
+    color: #015B70;
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom:0;
+    text-decoration: underline;
+}
+
+.frm{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: warp;
+    margin-left:1em;
+}
+.frm label{
+    color:#015B70;
+    font-size: 18px;
+    line-height: 19px;
+    margin-left: 10px;
+    padding-bottom: .2em;
+    display: flex;
+}
+.frm input{
+    width: 277px;
+    height: 46px;
+    border: 1.1px solid #015B70;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+.frm button[class=button]{
+    background-color: #015B70;
+    border: none;
+    border-radius: 5px;
+    width: 115px;
+    height: 26px;
+    color: #FFFFFF;
+    margin-left: 45%;
+    transform: translate(-50%);
+    margin-top: .5em;
+    cursor: pointer;
+}
+.frm select{
+    width: 277px;
+    height: 46px;
+    border: 1px solid #015B70;
+    box-sizing: border-box;
+    color: #015B70;
+    margin-left: 10px;;
+}
+.frm option{
+    color: #015B70;
+}
+.validators{
+    color: red;
+    margin-left: 10px;
+    opacity: 70%;
+}
+@media screen and (min-width:376px) and (max-width:1127px){
+    .container, .frm{
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+.frm button[class=button]{
+    margin-left:50%;
+    transform: translate(-50%);
+    width: auto;
+    position: relative;
+    margin-top: 20px;
+}
+}
+@media screen and (min-width:1128px){
+    .container, .frm{
+        margin-left: 60%;
+        transform: translate(-50%);
+        position: relative;
+    }
+    .frm button[class=button]{
+        margin-left:30%;
+        transform: translate(-60%);
+        margin-top: 20px;
+        width: 20vw;
+    }
+
+}

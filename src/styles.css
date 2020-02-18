@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    font-family: Helvetica Neue;
+    font-style: normal;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+input[type=text]{
+    color: #015B70;
+}
+option{
+    font-family: Helvetica Neue;
+    font-style: normal;
+}
+::placeholder{
+    color: #9B9B9B;
+    text-align: left;
+}

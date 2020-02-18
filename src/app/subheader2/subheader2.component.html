@@ -1,0 +1,26 @@
+<div class="container1">
+    <div class="nav">
+        <img [src]="logourl" alt="logo" [routerLink]="['/mainpage']" routerLinkActive="router-link-active" >
+        <div id="profile-container">
+            <img id="profileImage" src={{profileurl}} />
+        </div> 
+        <img id="notification" src="assets/Images/n1.svg" alt="notification" (click)="openModal('notificationModal')">  
+        <i class="fa fa-bars" routerLink='/ham2'></i>
+    </div>
+</div>
+<hr>
+
+<ss-modal id="notificationModal">
+    <div class="modalContainer">
+        <p id="cross" (click)="closeModal('notificationModal')">X</p>
+        <table>
+            <tr>
+                <td>
+                    Edison has commented on your post.
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</ss-modal>
+

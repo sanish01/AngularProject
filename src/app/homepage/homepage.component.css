@@ -1,0 +1,47 @@
+.first{
+    position: relative;
+    font-size: 20px ;
+    line-height: 21px;
+    color: #015B70;
+    margin-top:150px;
+    text-align: center;
+    width: auto;
+}
+.second{
+    position: relative;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    padding-top: 1em;
+    color: #4F361B;
+
+}
+.first .middle{
+    text-align: center;
+    
+}
+.btn{
+   background-color: #015B70;
+   border: none;
+   border-radius: 15px;
+   width: 115px;
+   height: 32px;
+   color: #FFFFFF;
+   margin-top: 3em;
+   margin-left: 50%;
+   transform: translate(-50%);
+   cursor: pointer;
+   text-align: center;
+}
+@media screen and (max-width:375px){
+    .first{
+        margin-top: 40%;
+        margin-left: 0vw;
+    }
+    .second{
+        margin-left: auto;
+        text-align-last: center;
+    }
+
+
+}

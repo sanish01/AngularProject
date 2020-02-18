@@ -1,0 +1,39 @@
+<app-subheader2></app-subheader2>
+<!--<div class="container">
+    <input type="text" placeholder="  &#xF002; Search" style="font-family: FontAwesome;">
+</div>-->
+<div>
+    <h3>People you have connected before.</h3>
+</div>
+<div class='p1'>
+    <i id='profile' class="fa fa-user-circle" aria-hidden="true"> <span> Eiderson</span></i>
+    <div class='btn'>  
+        <br>  
+        <button (click)="openModal('custom-modal')">Connect</button>
+        <button routerLink='/person-detail'>View Profile</button>
+    </div>
+</div>
+<div class='p1'>
+    <i id='profile' class="fa fa-user-circle" aria-hidden="true"> <span> Ema</span></i>
+    <div class='btn'>  
+        <br>  
+        <button (click)="openModal('custom-modal')">Connect</button>
+        <button>View Profile</button>
+    </div>
+</div>
+
+
+<ss-modal id="custom-modal">
+    <div class="modal-container">
+        <label class="lbl" for="question">Question category</label><br>
+        <input type="text" name="question" id="question" />
+        <br><br>
+        <label class='lbl' for="sub-question">Sub-category of question</label><br>
+        <input type="text" name="question-sub" id="question-sub" />
+        <br><br>
+        <label class='lbl' for="question-brief">Describe your question in brief</label>
+        <input type="text" name="question-brief" id="question-brief" />
+        <button type="submit" class="button"> Send</button>
+        <button type='button' class="button" (click)="closeModal('custom-modal')">Cancel</button>
+    </div>
+</ss-modal>

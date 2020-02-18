@@ -1,0 +1,97 @@
+.formcntl{
+    overflow: hidden;
+    margin-top: 2rem;
+    padding: .5em;
+    border: none;
+}
+.frm{
+    display: block;
+}
+.frm label{
+    color:#015B70;
+    font-size: 18px;
+    line-height: 19px;
+    display: block;
+    margin-left: 10px;
+
+}
+.frm input{
+    width: 277px;
+    height: 46px;
+    border: 1.1px solid #015B70;
+    box-sizing: border-box;
+    margin-left: 10px;
+
+}
+.validators{
+    color: red;
+    margin-left: 10px;
+    opacity: 60%;
+}
+.frm button[class=button1]{
+    background-color: #015B70;
+    border: none;
+    border-radius: 5px;
+    width: 115px;
+    height: 26px;
+    color: #FFFFFF;
+    margin-left: 11%;
+    cursor: pointer;
+    
+}
+.frm input[class=button2]{
+    background-color: #015B70;
+    border: none;
+    border-radius: 5px;
+    width: 115px;
+    height: 26px;
+    color: #FFFFFF;
+    margin-left: 12.5%;
+    cursor: pointer;
+    
+}
+a{
+    margin-top: 2em;
+    color: #015B70;
+    width: 125px;
+    display: inline-block;
+    font-size: 17px;
+    margin-left: 10px;
+}
+.frm .reg{
+    margin-top: 2em;
+    color: #015B70;
+    width: 120px;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: auto;
+}
+
+@media screen and (min-width:376px)and (max-width:1127px){
+    .formcntl, .frm{
+        margin-left: 50%;
+        transform: translate(-50%);
+        position: sticky;
+    }
+    
+    .frm input[class=button1], .frm input[class=button2]{
+        display: inline-block;
+        width: 110%;
+        margin-left: 0px;
+        margin-top:15px;
+        padding:.1em
+        
+    }
+}
+@media screen and (min-width:1128px){
+    .formcntl, .frm{
+        margin-left: 50%;
+        transform: translate(-50%);
+        position: sticky;
+    }
+    .frm input[class=button1], .frm input[class=button2]{
+        display: inline-block;
+        
+    }
+
+}

@@ -1,0 +1,37 @@
+.up i{
+    color: #015B70;
+    margin-top: 26px;
+    margin-right: auto;
+    float: right;
+    display: block;
+    width: auto;
+    padding: 0.5em;
+    font-size: 16px;
+   
+}
+.contain{
+    padding-top: 3em;
+    border: none;
+    margin-left: auto;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+ul li{
+    cursor: pointer;
+    color:#015B70;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: normal;
+    width: 100%;
+    padding: 1.5em 0 1.5em 0;
+    text-align: center;
+}
+ul li:hover{
+    background-color: #E5E5E5;
+    color: red;
+}

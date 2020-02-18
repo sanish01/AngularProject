@@ -1,0 +1,96 @@
+.container1{
+    overflow: hidden;
+    margin-top: 1rem;
+    padding: .5em;
+    border: none;
+}
+h4{
+    color: #015B70;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-left: -3vw;
+    text-align: center;
+    margin-bottom: .5em;
+}
+h4 #w{
+    color: #4F361B; 
+}
+.frm{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: warp;
+    margin-left:1em;
+}
+.frm label{
+    color:#015B70;
+    font-size: 18px;
+    line-height: 19px;
+    margin-left: 10px;
+    padding-bottom: .3em;
+}
+.frm input{
+    width: 277px;
+    height: 46px;
+    border: 1.1px solid #015B70;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+.frm button[class=button]{
+    background-color: #015B70;
+    border: none;
+    border-radius: 5px;
+    width: 115px;
+    height: 26px;
+    color: #FFFFFF;
+    margin-left: 45%;
+    transform: translate(-50%);
+    margin-top: 1em;
+}
+.frm .selector{
+    width: 277px;
+    height: 46px;
+    border: 1px solid #015B70;
+    box-sizing: border-box;
+    color: #015B70;
+    margin-left: 10px;
+}
+.frm .selector :hover{
+    color: #9B9B9B;
+}
+.frm option{
+    color: #015B70;
+
+}
+.validators{
+    color: red;
+    opacity: 70%;
+    margin-left: 10px;
+}
+
+@media screen and (min-width:376px) and (max-width:1127px){
+    .container1, .frm{
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+.frm input[class=button]{
+    margin-left:60%;
+    transform: translate(-50%);
+    width: auto;
+    position: relative;
+    margin-top: 20px;
+}
+}
+@media screen and (min-width:1128px){
+    .container1, .frm{
+        margin-left: 50%;
+        transform: translate(-50%);
+        position: relative;
+    }
+    .frm input[class=button]{
+        margin-left:40%;
+        transform: translate(-50%);
+        margin-top: 20px;
+        width: auto;
+    }
+
+}

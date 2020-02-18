@@ -1,0 +1,38 @@
+<app-subheader></app-subheader>
+<div class="container1">
+    <h4><span id="w" >Welcome to UpCaliber,</span> XYZ</h4>
+    <form [formGroup]='welcomeForm' (ngSubmit)='onsubmit()' class="frm">
+        <label for="phone">Phone*</label>
+        <input formControlName="phone" type="text" id="phone" maxlength="10" pattern="\d{10}" placeholder="  +9198........">
+        <div *ngIf=" submitted && f.phone.errors" class="validators">
+            <div *ngIf="f.phone.errors.required">Phone number required</div>
+        </div>
+        <br>
+        <label for="experience">Experience</label>
+        <input formControlName='experience' type="number" name="experience" placeholder="  In Years">
+        <br>
+        <label for="Degree">Highest degree*</label>
+        <select formControlName="degree" class="selector">
+            <option>Bachelor</option>
+            <option>Masters</option>
+            <option>Doctorate</option>
+        </select>
+        <div *ngIf=" submitted && f.degree.errors" class="validators">
+            <div *ngIf="f.degree.errors.required">Required</div>
+        </div>
+        <br> 
+        <!--<label for="marital status">Marital status</label>
+        <select class="selector">
+            <option>Single</option>
+            <option>Married</option>
+            <option>Divorced</option>
+        </select>
+        <br>-->
+        <label for="Hobbies">Hobbies</label>
+        <input formControlName="hobbies" type="text" name="hobbies" maxlength="200">
+        <br>
+        <button type="submit" class="button" (click)='show()'>Submit</button>
+        
+    </form>
+
+</div> 

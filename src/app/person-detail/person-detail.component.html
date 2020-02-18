@@ -1,0 +1,31 @@
+<app-subheader2></app-subheader2>
+<div class="container">
+    <table *ngFor="let person of persons">
+        <col width='25%'>
+        <col width='75%'>
+        <th colspan="2"><i id='profile' class="fa fa-user-circle" aria-hidden="true"> <span> {{person.name}}</span></i></th>
+        
+        <tr>
+            <td>Gender:</td>
+            <td>{{person.gender}}</td>
+        </tr>
+        <tr>
+            <td>Experience:</td>
+            <td>{{person.experience}}</td>
+        </tr>
+        <tr>
+            <td>Highest degree:</td>
+            <td>{{person.highestdegree}}</td>
+        </tr>
+        <tr>
+            <td>Hobbies:</td>
+            <td>{{person.hobbies}}</td>
+        </tr>
+        <tr>
+            <td>Motivation:</td>
+            <td>{{person.motivation}}</td>
+        </tr>
+        
+    </table>
+
+</div>

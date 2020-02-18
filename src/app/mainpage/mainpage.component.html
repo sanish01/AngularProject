@@ -1,0 +1,34 @@
+<app-subheader2></app-subheader2>
+<div class="container">
+    <input type="text" placeholder="  &#xF002; Search" style="font-family: FontAwesome;">
+</div>
+<div class="body">
+    <!--<a id='feed' routerLink="/feedback">FEEDBACK</a>-->
+   <input id='post' type="text" value="Post your questions" (click)="openModal('custom-modal')"> 
+</div>
+<div class="box">
+    <p>Why is python most preferrable language?</p>
+    <i id='profile' class="fa fa-user-circle" aria-hidden="true" routerLink='/person-detail'> <span> Eiderson</span></i>
+    <p>Python is one of the most powerful as well as dynamic high level programming lanuage and is well famous for..... <span id="read">read more</span></p>
+</div>
+<div class="box1">
+    <p>How to use pen tool in figma? </p>
+    <i id='profile' class="fa fa-user-circle" aria-hidden="true"> <span> Ema</span></i>
+    <p>Pen tool is used by selecting then icon in top left side. click the mouse to the position you want to use and drag.....<span id="read">read more</span></p>
+</div>
+
+<ss-modal id="custom-modal">
+    <div class="modal-container">
+        <label class="lbl" for="question">Question category</label><br>
+        <input type="text" name="question" id="question" />
+        <br><br>
+        <label class='lbl' for="sub-question">Sub-category of question</label><br>
+        <input type="text" name="question-sub" id="question-sub" />
+        <br><br>
+        <label class='lbl' for="question-brief">Describe your question in brief</label>
+        <input type="text" name="question-brief" id="question-brief" />
+        <button type="submit" class="button" (click)='post()' routerLink='/myquestions'> Post</button>
+        <button type='button' class="button" (click)="closeModal('custom-modal')">Cancel</button>
+    </div>
+</ss-modal>
+

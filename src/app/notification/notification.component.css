@@ -1,0 +1,38 @@
+table{
+    border: 1.1px solid #015B70;
+    padding: .2em;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+th, td{
+    padding-left: 1em;
+}
+th{
+    color: #015B70;
+    font-size: 17px;
+    font-weight: normal;
+    text-align: left;
+}
+td{
+    color: #4F361B;
+    padding-top: 10px;
+}
+span{
+    display:block;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;   
+}
+
+table tr .sp :hover{
+    background-color: aliceblue;
+    color: #015B70;
+}
+
+.comment{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 80%;
+}
